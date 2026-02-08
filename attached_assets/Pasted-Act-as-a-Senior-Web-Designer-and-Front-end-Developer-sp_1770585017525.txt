@@ -1,0 +1,68 @@
+Act as a Senior Web Designer and Front-end Developer specialized in high-end luxury legal branding. Your goal is to build a sophisticated, ultra-premium landing page for "Lena Advocacia". 
+
+The design must strictly follow a "Dark Luxury" aesthetic: deep blacks, charcoal grays, and refined gold accents. It should feel authoritative, exclusive, and bespoke, avoiding any generic AI-generated look.
+
+Prompt para Construção de Landing Page: Dra. Priscila Albuquerque
+Atue como um Senior Web Designer e Front-end Developer especializado em Branding de Saúde e Estética de Luxo.
+1. DESIGN SYSTEM (design.json)
+JSON
+{
+  "designPrinciples": {
+    "overall": "Clínica estética premium, feminina, acolhedora e profissional.",
+    "keywords": ["harmonização orofacial", "estética avançada", "feminilidade", "autoridade médica", "suavidade"],
+    "avoid": ["cores agressivas", "letras muito pequenas", "excesso de animações disruptivas", "aspecto amador"]
+  },
+  "colorPalette": {
+    "primary": { "plum": "#4B2C5E", "deepPurple": "#361D45", "lavender": "#9B7EAD" },
+    "accent": { "mintGreen": "#28B463", "softLavender": "#E6E1EA", "white": "#FFFFFF" },
+    "text": { "primary": "#FFFFFF", "secondary": "#E6E1EA", "accent": "#28B463" }
+  },
+  "typography": {
+    "headings": { "family": "Montserrat, sans-serif", "weight": "600", "style": "Clean e Moderno" },
+    "body": { "family": "Open Sans, sans-serif", "weight": "400", "lineHeight": "1.6" }
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "background": "#28B463",
+        "text": "#FFFFFF",
+        "borderRadius": "25px",
+        "padding": "15px 30px",
+        "hover": "filter: brightness(1.1); scale: 1.05"
+      }
+    },
+    "dividers": { "style": "Ondas suaves (waves) para transição entre seções em tons de roxo e lilás." }
+  }
+}
+2. ESTRUTURA DA PÁGINA (CONTEÚDO)
+Header
+    • Logo: Centralizado, com o ícone de coração/estética e o nome "Dra. Priscila Albuquerque".
+    • Subtítulo: "Cirurgiã-dentista e Harmonização Orofacial Avançada".
+Seção 1: Hero (Apresentação)
+    • Background: Gradiente suave de roxo.
+    • Conteúdo: Foto profissional da Dra. Priscila em alta resolução.
+    • Texto: Citação inspiracional sobre elevar a autoestima e o bem-estar através de procedimentos personalizados.
+Seção 2: Procedimentos de Emagrecimento Facial
+    • Lista de Especialidades: Lipo Enzimática de Papada, Bichectomia, Bioestimuladores, Fios de PDO, entre outros.
+    • Botão CTA: "Quero Saber Mais" (Verde).
+Seção 3: Preenchimentos e Harmonização (Cards)
+    • Destaque: Preenchimentos Simples e Avançados.
+    • Itens: Labial, Mandibular, Olheiras, Rinomodelação.
+    • Design: Cards com fundo lilás e bordas arredondadas.
+Seção 4: Tecnologia e Rejuvenescimento
+    • Destaque: Ultraformer III, Lavieen, Scizer.
+    • Foco: Tecnologia de ponta para resultados de alta performance.
+Seção 5: Harmonização do Sorriso & Periodontia
+    • Conteúdo: Facetas, Lentes de Contato, Gengivoplastia e Enxerto Gengival.
+    • Estilo: Ícones minimalistas que remetam à odontologia estética.
+Seção 6: Prova Social (Resultados)
+    • Grid de Imagens: Galeria de "Antes e Depois" com curadoria, exibindo resultados reais de forma ética e elegante.
+Seção 7: Autoridade (Meus Títulos)
+    • Lista de Qualificações: Formação acadêmica, especializações em Harmonização e Periodontia, e histórico profissional (ex: Graduação em 2011, Residências em Miami e Harvard).
+3. REQUISITOS TÉCNICOS
+    • Navegação Fluida: Transições em curvas (wave dividers) para separar as seções cromáticas.
+    • Conversão: Botão de WhatsApp flutuante sempre visível.
+    • Responsividade: Otimização rigorosa para dispositivos móveis, mantendo a legibilidade das listas de procedimentos.
+    • Visual: Uso de espaços negativos para não sobrecarregar a leitura, mantendo o aspecto de "clínica limpa".
+
+Gostaria que eu gerasse o código estrutural (HTML/CSS) com base nesse novo sistema de design para você?
