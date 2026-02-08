@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-24 pb-32 overflow-hidden">
       {/* Background with texture overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1025] via-[#1a1025]/95 to-[#361D45]/40 z-10" />
@@ -14,7 +14,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-20 grid md:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 md:px-6 relative z-30 grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8 animate-in slide-in-from-left duration-700">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
             <Star className="w-3 h-3 text-accent fill-accent" />
