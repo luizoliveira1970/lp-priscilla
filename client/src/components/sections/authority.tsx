@@ -7,7 +7,7 @@ export function Authority() {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/3">
              <div className="aspect-[3/4] rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 border border-white/10 shadow-2xl relative">
-                <img src="/images/hero-doctor.png" alt="Dra. Priscila" className="w-full h-full object-cover" />
+                <img src="/images/dra-priscila-real.png" alt="Dra. Priscila" className="w-full h-full object-cover object-center" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
                     <h3 className="text-white font-heading font-bold text-xl">Dra. Priscila Albuquerque</h3>
                     <p className="text-primary text-sm">CRO/SP 12345</p>

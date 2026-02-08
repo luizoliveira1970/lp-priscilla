@@ -64,9 +64,9 @@ export function Hero() {
             <div className="absolute inset-0 rounded-[100px_0_100px_0] overflow-hidden border border-white/10 shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1025] via-transparent to-transparent z-10 opacity-60" />
               <img 
-                src="/images/hero-doctor.png" 
+                src="/images/dra-priscila-real.png" 
                 alt="Dra. Priscila Albuquerque" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-1000"
+                className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-1000"
               />
             </div>
             
