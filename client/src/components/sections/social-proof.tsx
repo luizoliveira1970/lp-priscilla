@@ -25,20 +25,35 @@ export function SocialProof() {
             </div>
           </div>
 
-          {/* Outros Placeholders */}
-          {[2, 3].map((i) => (
-            <div key={i} className="group relative aspect-[4/5] bg-neutral-900 rounded-xl overflow-hidden border border-white/10">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-white/20 font-heading text-lg">Resultado {i}</p>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <div>
-                  <p className="text-white font-bold">Harmonização Facial</p>
-                  <p className="text-primary text-sm">Protocolo Exclusivo</p>
-                </div>
+          {/* Resultado 2 - Rinomodelação */}
+          <div className="group relative aspect-[4/5] bg-neutral-900 rounded-xl overflow-hidden border border-white/10">
+            <img
+              src="/images/social-proof-2.jpg"
+              alt="Resultado Rinomodelação"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <div>
+                <p className="text-white font-bold">Rinomodelação</p>
+                <p className="text-primary text-sm">Harmonização Nasal</p>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Resultado 3 - Pós Imediato */}
+          <div className="group relative aspect-[4/5] bg-neutral-900 rounded-xl overflow-hidden border border-white/10">
+            <img
+              src="/images/social-proof-3.jpg"
+              alt="Resultado Pós Imediato"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <div>
+                <p className="text-white font-bold">Pós-Imediato</p>
+                <p className="text-primary text-sm">Resultado Real</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="mt-12 text-center">
