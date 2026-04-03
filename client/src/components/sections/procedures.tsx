@@ -51,7 +51,7 @@ export function Procedures() {
               ))}
             </ul>
             <a
-              href="https://wa.me/558898384341?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento."
+              href="https://api.whatsapp.com/send?phone=558898384341&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-heading font-medium shadow-lg shadow-primary/20 transition-colors"

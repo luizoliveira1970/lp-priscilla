@@ -61,10 +61,17 @@ export function Header() {
               {link.name}
             </a>
           ))}
-          <Button 
+          <Button
+            asChild
             className="rounded-full bg-primary hover:bg-primary/90 text-white px-6 font-heading font-semibold shadow-[0_0_15px_rgba(40,180,99,0.3)] hover:shadow-[0_0_20px_rgba(40,180,99,0.5)] transition-all duration-300"
           >
-            Agendar Consulta
+            <a
+              href="https://api.whatsapp.com/send?phone=558898384341&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Agendar Consulta
+            </a>
           </Button>
         </nav>
 
@@ -90,8 +97,15 @@ export function Header() {
               {link.name}
             </a>
           ))}
-          <Button className="w-full rounded-full bg-primary mt-2">
-            Agendar Consulta
+          <Button asChild className="w-full rounded-full bg-primary mt-2">
+            <a
+              href="https://api.whatsapp.com/send?phone=558898384341&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento."
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Agendar Consulta
+            </a>
           </Button>
         </div>
       )}

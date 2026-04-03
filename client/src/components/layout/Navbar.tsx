@@ -63,9 +63,16 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <Button
+            asChild
             className="rounded-full bg-primary hover:bg-primary/90 text-white font-bold px-6 shadow-[0_0_20px_rgba(40,180,99,0.3)] transition-all hover:scale-105"
           >
-            Agendar Consulta
+            <a
+              href="https://api.whatsapp.com/send?phone=558898384341&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Agendar Consulta
+            </a>
           </Button>
         </div>
 
@@ -91,8 +98,15 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <Button className="w-full rounded-full bg-primary text-white font-bold">
-            Agendar Consulta
+          <Button asChild className="w-full rounded-full bg-primary text-white font-bold">
+            <a
+              href="https://api.whatsapp.com/send?phone=558898384341&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento."
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Agendar Consulta
+            </a>
           </Button>
         </div>
       )}

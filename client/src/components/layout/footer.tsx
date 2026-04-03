@@ -39,7 +39,7 @@ export function Footer() {
               <li><a href="#procedimentos" className="hover:text-primary transition-colors">Procedimentos</a></li>
               <li><a href="#tecnologia" className="hover:text-primary transition-colors">Tecnologia</a></li>
               <li><a href="#sobre" className="hover:text-primary transition-colors">Sobre a Dra.</a></li>
-              <li><a href="https://wa.me/5588998384341" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Agendamento</a></li>
+              <li><a href="https://api.whatsapp.com/send?phone=558898384341&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento." target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Agendamento</a></li>
             </ul>
           </div>
 
@@ -70,12 +70,12 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/5588998384341"
+                  href="https://api.whatsapp.com/send?phone=558898384341&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors flex items-center gap-2"
                 >
-                  <span className="font-semibold text-white/80 text-base hover:text-primary transition-colors">WhatsApp (88) 99838-4341</span>
+                  <span className="font-semibold text-white/80 text-base hover:text-primary transition-colors">WhatsApp (88) 98384-341</span>
                 </a>
               </li>
             </ul>
