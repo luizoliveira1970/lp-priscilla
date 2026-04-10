@@ -17,26 +17,13 @@
 
     <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <!-- Preload da imagem hero (LCP crítico) -->
-    <link rel="preload" as="image" href="/images/dra-priscila-real.webp" fetchpriority="high" />
+    <!-- Preload da imagem hero mobile (LCP crítico em mobile) -->
+    <link rel="preload" as="image" href="/images/dra-priscila-real-mobile.webp" imagesrcset="/images/dra-priscila-real-mobile.webp 768w, /images/dra-priscila-real.webp 1200w" imagesizes="(max-width: 768px) 100vw, 50vw" fetchpriority="high" />
 
     <!-- Google Fonts: preconnect + preload otimizados -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" />
-    </noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Open+Sans:wght@400;600&display=swap" />
 
     <!-- Google Tag Manager (defer para não bloquear renderização) -->
     <script defer>
@@ -49,13 +36,35 @@
       });
     </script>
     <!-- End Google Tag Manager -->
+    
+    <style>
+      /* Estilos Críticos Mínimos para o Skeletal Render */
+      #root:empty { display: block; }
+      .loading-skeleton-nav { height: 80px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; background: transparent; position: fixed; top: 0; left: 0; right: 0; z-index: 50; }
+      .loading-skeleton-hero { margin-top: 100px; padding: 0 24px; text-align: center; }
+      .loading-skeleton-title { font-family: 'Montserrat', sans-serif; color: white; font-size: 32px; font-weight: 700; margin-bottom: 16px; opacity: 0.8; }
+      @media (min-width: 768px) { .loading-skeleton-hero { text-align: left; padding: 0 80px; } .loading-skeleton-title { font-size: 64px; } }
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTD26WV7"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
+    
+    <div id="root">
+      <!-- Skeletal Content (Visível antes do React Hydration) -->
+      <div class="loading-skeleton-nav">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1);"></div>
+          <div style="color: white; font-family: sans-serif; font-weight: bold;">Dra. Priscila</div>
+        </div>
+      </div>
+      <div class="loading-skeleton-hero">
+        <h1 class="loading-skeleton-title">Eleve sua autoestima</h1>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

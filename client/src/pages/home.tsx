@@ -1,12 +1,16 @@
+import { lazy, Suspense } from "react";
 import { Header } from "@/components/layout/header";
 import { Hero } from "@/components/sections/hero";
 import { Procedures } from "@/components/sections/procedures";
 import { Harmonization } from "@/components/sections/harmonization";
-import { Technology } from "@/components/sections/technology";
-import { SmileSection } from "@/components/sections/smile";
-import { SocialProof } from "@/components/sections/social-proof";
-import { Authority } from "@/components/sections/authority";
-import { Footer } from "@/components/layout/footer";
+
+// Componentes abaixo da dobra carregados sob demanda
+const Technology = lazy(() => import("@/components/sections/technology").then(m => ({ default: m.Technology })));
+const SmileSection = lazy(() => import("@/components/sections/smile").then(m => ({ default: m.SmileSection })));
+const SocialProof = lazy(() => import("@/components/sections/social-proof").then(m => ({ default: m.SocialProof })));
+const Authority = lazy(() => import("@/components/sections/authority").then(m => ({ default: m.Authority })));
+const Footer = lazy(() => import("@/components/layout/footer").then(m => ({ default: m.Footer })));
+
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 
@@ -19,13 +23,14 @@ export default function Home() {
         <Hero />
         <Procedures />
         <Harmonization />
-        <Technology />
-        <SmileSection />
-        <SocialProof />
-        <Authority />
+        <Suspense fallback={<div className="h-96 bg-background" />}>
+          <Technology />
+          <SmileSection />
+          <SocialProof />
+          <Authority />
+          <Footer />
+        </Suspense>
       </main>
-
-      <Footer />
 
       {/* Floating WhatsApp Button */}
         <Button

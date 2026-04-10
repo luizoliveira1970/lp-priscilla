@@ -20,6 +20,8 @@ export function Procedures() {
             <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/5] max-w-sm mx-auto md:max-w-none">
               <img
                 src="/images/procedure-face.webp"
+                srcSet="/images/procedure-face-mobile.webp 600w, /images/procedure-face.webp 1200w"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 alt="Procedimentos Faciais"
                 className="w-full h-full object-cover"
                 loading="lazy"
