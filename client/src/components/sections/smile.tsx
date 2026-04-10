@@ -40,9 +40,11 @@ export function SmileSection() {
           <div className="order-1 md:order-2 relative group">
             <div className="relative rounded-full overflow-hidden aspect-square border-4 border-white/5 shadow-2xl max-w-md mx-auto">
               <img
-                src="/images/dental-aesthetic.png"
+                src="/images/dental-aesthetic.webp"
                 alt="Estética Odontológica"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#2d1b3e]/40 to-transparent" />
             </div>

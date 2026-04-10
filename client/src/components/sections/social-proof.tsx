@@ -1,4 +1,35 @@
+"use client";
+import { useEffect, useRef } from "react";
+
 export function SocialProof() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Set src only when visible to avoid downloading before needed
+            if (!video.src) {
+              video.src = "/videos/social-proof-papada-zero.mp4";
+              video.load();
+            }
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="resultados" className="py-24 bg-[#1a1025] relative">
       <div className="container mx-auto px-4 md:px-6">
@@ -10,12 +41,12 @@ export function SocialProof() {
           {/* Card de Vídeo - Prova Social */}
           <div className="group relative aspect-[4/5] bg-neutral-900 rounded-xl overflow-hidden border border-white/10">
             <video
-              src="/videos/social-proof-papada-zero.mp4"
+              ref={videoRef}
               className="w-full h-full object-cover"
-              autoPlay
               muted
               loop
               playsInline
+              preload="none"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
@@ -28,9 +59,11 @@ export function SocialProof() {
           {/* Resultado 2 - Rinomodelação */}
           <div className="group relative aspect-[4/5] bg-neutral-900 rounded-xl overflow-hidden border border-white/10">
             <img
-              src="/images/social-proof-2.jpg"
+              src="/images/social-proof-2.webp"
               alt="Resultado Rinomodelação"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>
@@ -43,9 +76,11 @@ export function SocialProof() {
           {/* Resultado 3 - Pós Imediato */}
           <div className="group relative aspect-[4/5] bg-neutral-900 rounded-xl overflow-hidden border border-white/10">
             <img
-              src="/images/social-proof-3.jpg"
+              src="/images/social-proof-3.webp"
               alt="Resultado Pós Imediato"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <div>

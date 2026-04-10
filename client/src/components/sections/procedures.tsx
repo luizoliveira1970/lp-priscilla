@@ -18,9 +18,11 @@ export function Procedures() {
             <div className="absolute -inset-4 bg-primary/20 rounded-3xl blur-2xl opacity-50" />
             <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/5]">
               <img
-                src="/images/procedure-face.jpg"
+                src="/images/procedure-face.webp"
                 alt="Procedimentos Faciais"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#2d1b3e] to-transparent opacity-60" />
             </div>

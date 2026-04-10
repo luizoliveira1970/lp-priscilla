@@ -8,9 +8,11 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1025] via-[#1a1025]/95 to-[#361D45]/40 z-10" />
         <img
-          src="/images/luxury-bg.png"
+          src="/images/luxury-bg.webp"
           alt="Luxury Texture"
           className="w-full h-full object-cover opacity-30 mix-blend-overlay"
+          fetchPriority="high"
+          decoding="async"
         />
       </div>
 
@@ -70,9 +72,11 @@ export function Hero() {
           <div className="absolute inset-0 rounded-[100px_0_100px_0] overflow-hidden border border-white/10 shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-t from-[#1a1025] via-transparent to-transparent z-10 opacity-60" />
             <img
-              src="/images/dra-priscila-real.png"
+              src="/images/dra-priscila-real.webp"
               alt="Dra. Priscila Albuquerque"
               className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-1000"
+              fetchPriority="high"
+              decoding="async"
             />
           </div>
 

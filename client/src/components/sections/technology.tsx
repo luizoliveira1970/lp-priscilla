@@ -21,9 +21,11 @@ export function Technology() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/images/clinic-interior.jpg"
+          src="/images/clinic-interior.webp"
           alt="Tecnologia"
           className="w-full h-full object-cover opacity-10 grayscale"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1025] via-[#1a1025]/90 to-[#1a1025]" />
       </div>
@@ -62,24 +64,24 @@ export function Technology() {
               <div className="relative z-10 grid grid-cols-2 gap-4">
                 <div className="space-y-4 mt-8">
                   <div className="h-40 relative overflow-hidden rounded-2xl border border-white/10 backdrop-blur-md group/item">
-                    <img src="/images/tech/ultraformer.png" alt="Lifting Tech" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover/item:scale-110 transition-transform duration-500" />
+                    <img src="/images/tech/ultraformer.webp" alt="Lifting Tech" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover/item:scale-110 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                     <span className="absolute bottom-4 left-4 text-xs text-secondary font-mono">Lifting Tech</span>
                   </div>
                   <div className="h-56 relative overflow-hidden rounded-2xl border border-white/10 group/item">
-                    <img src="/images/tech/lavieen.png" alt="Laser Precision" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover/item:scale-110 transition-transform duration-500" />
+                    <img src="/images/tech/lavieen.webp" alt="Laser Precision" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover/item:scale-110 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                     <span className="absolute bottom-4 left-4 text-xs text-white font-mono">Laser Precision</span>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="h-56 relative overflow-hidden rounded-2xl border border-primary/20 group/item">
-                    <img src="/images/tech/scizer.png" alt="Body Contour" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover/item:scale-110 transition-transform duration-500" />
+                    <img src="/images/tech/scizer.webp" alt="Body Contour" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover/item:scale-110 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                     <span className="absolute bottom-4 left-4 text-xs text-primary font-mono">Body Contour</span>
                   </div>
                   <div className="h-40 relative overflow-hidden rounded-2xl border border-white/10 backdrop-blur-md group/item">
-                    <img src="/images/tech/analysis.png" alt="Smart Analysis" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover/item:scale-110 transition-transform duration-500" />
+                    <img src="/images/tech/analysis.webp" alt="Smart Analysis" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover/item:scale-110 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                     <span className="absolute bottom-4 left-4 text-xs text-secondary font-mono">Smart Analysis</span>
                   </div>
