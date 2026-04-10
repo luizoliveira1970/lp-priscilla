@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-24 pb-32 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-20 pb-24 overflow-hidden">
       {/* Background with texture overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1025] via-[#1a1025]/95 to-[#361D45]/40 z-10" />
@@ -16,8 +16,9 @@ export function Hero() {
         />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-30 grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8 animate-in slide-in-from-left duration-700">
+      <div className="container mx-auto px-4 md:px-6 relative z-30 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        {/* Text content always first on mobile */}
+        <div className="space-y-6 md:space-y-8 text-center md:text-left animate-in slide-in-from-left duration-700">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
             <Star className="w-3 h-3 text-accent fill-accent" />
             <span className="text-xs font-heading font-medium text-secondary uppercase tracking-widest">
@@ -25,19 +26,19 @@ export function Hero() {
             </span>
           </div>
 
-          <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
+          <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
             Eleve sua <span className="text-gold italic font-serif">autoestima</span> e bem-estar.
           </h1>
 
-          <p className="text-lg text-secondary/80 leading-relaxed max-w-lg font-light">
+          <p className="text-base md:text-lg text-secondary/80 leading-relaxed max-w-lg mx-auto md:mx-0 font-light">
             Procedimentos personalizados que unem ciência e arte para revelar a sua melhor versão com naturalidade e sofisticação.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-primary hover:bg-primary/90 text-white px-8 h-14 text-base font-heading font-semibold shadow-[0_0_20px_rgba(40,180,99,0.4)]"
+              className="w-full sm:w-auto rounded-full bg-primary hover:bg-primary/90 text-white px-8 h-14 text-base font-heading font-semibold shadow-[0_0_20px_rgba(40,180,99,0.4)]"
             >
               <a href="https://api.whatsapp.com/send?phone=558898384341&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento." target="_blank" rel="noopener noreferrer">
                 Agendar Avaliação
@@ -47,7 +48,7 @@ export function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="rounded-full border-white/20 text-white hover:bg-white/5 px-8 h-14 text-base font-heading"
+              className="w-full sm:w-auto rounded-full border-white/20 text-white hover:bg-white/5 px-8 h-14 text-base font-heading"
             >
               <a href="#procedimentos">
                 Conhecer Procedimentos
@@ -55,19 +56,20 @@ export function Hero() {
             </Button>
           </div>
 
-          <div className="pt-8 border-t border-white/10 flex items-center gap-8">
+          <div className="pt-6 md:pt-8 border-t border-white/10 flex items-center gap-8 justify-center md:justify-start">
             <div>
-              <p className="text-3xl font-heading font-bold text-white">10+</p>
+              <p className="text-2xl md:text-3xl font-heading font-bold text-white">10+</p>
               <p className="text-xs text-secondary uppercase tracking-wider">Anos de Experiência</p>
             </div>
             <div>
-              <p className="text-3xl font-heading font-bold text-white">5k+</p>
+              <p className="text-2xl md:text-3xl font-heading font-bold text-white">5k+</p>
               <p className="text-xs text-secondary uppercase tracking-wider">Pacientes Atendidos</p>
             </div>
           </div>
         </div>
 
-        <div className="relative h-[600px] hidden md:block animate-in slide-in-from-right duration-700 delay-200">
+        {/* Image: hidden on mobile, show on md+ */}
+        <div className="relative h-[450px] md:h-[600px] hidden md:block animate-in slide-in-from-right duration-700 delay-200">
           {/* Image Container with Luxury Frame Effect */}
           <div className="absolute inset-0 rounded-[100px_0_100px_0] overflow-hidden border border-white/10 shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-t from-[#1a1025] via-transparent to-transparent z-10 opacity-60" />
